@@ -12,7 +12,7 @@ def my_collect(array)
     counter = 0
     while counter < array.length
 
-      collection << (yield array[counter])
+      collection << (yield array[counter]).upcase
        counter += 1
     end
 
